@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculador de salarios</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <h5>
+        Presiona "Agregar" para generar un nuevo integrante del grupo familiar.
+      </h5>
+    </div>
+    <div id="botones">
+      <button class="btn btn-primary" type="submit" id="boton-agregar">
+        Agregar
+      </button>
+      <button class="btn btn-primary" type="submit" id="boton-quitar" disabled>
+        Quitar
+      </button>
+      <button
+        class="btn btn-primary"
+        type="submit"
+        disabled
+        id="boton-calcular"
+      >
+        Calcular
+      </button>
+      <button class="btn btn-primary" type="reset" id="boton-reset">
+        Resetear
+      </button>
+    </div>
+    <div id="integrantes" class="oculto"></div>
+    <div id="resultados" class="oculto">
+      <p>
+        El mayor salario anual es:
+        <strong class="strong" id="mayor-salario-anual"></strong>
+      </p>
+      <p>
+        El menor salario anual es:
+        <strong class="strong" id="menor-salario-anual"></strong>
+      </p>
+      <p>
+        El salario anual promedio es:
+        <strong class="strong" id="salario-anual-promedio"></strong>
+      </p>
+      <p>
+        El salario mensual promedio es:
+        <strong class="strong" id="salario-mensual-promedio"></strong>
+      </p>
+    </div>
+    <script src="js/calculos.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "calculador-de-salarios",
+  "version": "1.0.0",
+  "description": "Ejercicio del curso rArgentinaPrograma, clase 6",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LM-gh/Calculador-de-salarios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LM-gh/Calculador-de-salarios/issues"
+  },
+  "homepage": "https://github.com/LM-gh/Calculador-de-salarios#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
