@@ -89,8 +89,8 @@ function quitarIntegrante() {
 function borrarIntegrantesAnteriores() {
   let $integrantes = document.querySelectorAll(".integrante");
 
-  $integrantes.forEach(function (index) {
-    index.remove();
+  $integrantes.forEach(function (elemento) {
+    elemento.remove();
   });
 }
 
@@ -109,13 +109,12 @@ function obtenerSalarios() {
 }
 
 function calcularResultados(salarios) {
-  let resultados = {
+  return (resultados = {
     mayorSalarioAnual: calcularMayorNumero(salarios),
     menorSalarioAnual: calcularMenorNumero(salarios),
     salarioAnualPromedio: calcularPromedioNumeros(salarios),
     salarioMensualPromedio: calcularSalarioMensualPromedio(salarios),
-  };
-  return resultados;
+  });
 }
 
 function mostrarElemento(elemento) {

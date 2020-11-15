@@ -31,9 +31,5 @@ function calcularPromedioNumeros(numeros) {
 }
 
 function calcularSalarioMensualPromedio(salarios) {
-  let sumaSalarios = 0;
-  for (let i = 0; i < salarios.length; i++) {
-    sumaSalarios += salarios[i];
-  }
-  return sumaSalarios / 12;
+  return calcularPromedioNumeros(salarios) / 12;
 }
